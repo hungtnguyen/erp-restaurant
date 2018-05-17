@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+
+<head>
+    <!-- Basic -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Nguyễn Tôn Hùng - 1633514 | Đồ án 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100italic,100,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag '/frontend/style.css', media: 'screen' %>
+    <%= stylesheet_link_tag '/frontend/css/main.css', media: 'screen' %>
+    <!-- Responsive -->
+    <%= stylesheet_link_tag '/frontend/css/responsive.css', media: 'screen' %>
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/ie.js"></script>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+</head>
+
+<body onload="initialize()">
+    <div class="loader"></div>
+    <!--===| Search Start |===-->
+    <%= render "erp/restaurant/frontend/modules/search" %>
+    <!--===| Search End |===-->
+    <!--===| Pop Up Google Map Start |===-->
+    <%= render "erp/restaurant/frontend/modules/popup_google_map" %>
+    <!--===| Pop Up Google Map End |===-->
+    <!--===| Header Top Start |===-->
+    <div id="offcanvas-container" class="wrapper offcanvas-container">
+        <div class="inner-wrapper offcanvas-pusher">
+
+            <div class="slider-one">
+                <div id="map" class="overlay">
+                    <div class="guideme"><i class="flaticon-map43"></i></div>
+                </div>
+                <%= render "erp/restaurant/frontend/modules/header" %>
+                <!-- /header-wrapper -->
+            </div>
+            <!--slider One -->
+
+            <%= yield %>
+            
+            <!--===| Right Fixed Booking Form Start|===-->
+            <%= render "erp/restaurant/frontend/modules/right_fixed_booking" %>
+            <!--===| Right Fixed Booking Form End|===-->
+
+            <!--====| Footer section Start|====-->
+            <%= render "erp/restaurant/frontend/modules/footer" %>
+            <!--==| Footer section End|==-->
+
+        </div>
+        <!--==| .inner-wrapper |==-->
+
+        <!--==| offcanvas-menu |==-->
+        <%= render "erp/restaurant/frontend/modules/offcanvas_menu" %>
+        <!-- .offcanvas-menu -->
+    </div>
+    <!-- .wrapper -->
+
+    <!--  JAVASCRIPT -->
+    <%= javascript_include_tag '/frontend/js/jquery.min.js' %>
+
+    <!-- Modernizr JS -->
+    <%= javascript_include_tag '/frontend/js/modernizr-2.6.2.min.js' %>
+
+    <!--Bootatrap JS-->
+    <%= javascript_include_tag '/frontend/js/bootstrap.min.js' %>
+
+    <!-- Animate js -->
+    <%= javascript_include_tag '/frontend/js/wow.min.js' %>
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <%= javascript_include_tag '/frontend/vendor/rs-plugin/js/jquery.themepunch.tools.min.js' %>
+    <%= javascript_include_tag '/frontend/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js' %>
+
+    <!-- Fancy Box JS -->
+    <%= javascript_include_tag '/frontend/vendor/fancybox/jquery.fancybox.min.js' %>
+
+    <!-- OWL CAROUSEL   -->
+    <%= javascript_include_tag '/frontend/js/owl.carousel.min.js' %>
+
+    <!-- Offcanvas -->
+    <%= javascript_include_tag '/frontend/js/sidebarEffects.js' %>
+    <%= javascript_include_tag '/frontend/js/classie.js' %>
+
+    <!-- Gallery Shuffle Js -->
+    <%= javascript_include_tag '/frontend/js/jquery.shuffle.min.js' %>
+
+    <!-- jQuery UI -->
+    <%= javascript_include_tag '/frontend/js/jquery-ui.min.js' %>
+
+    <!-- CountDown -->
+    <%= javascript_include_tag '/frontend/js/jquery.countdown.js' %>
+
+    <!-- Validation -->
+    <%= javascript_include_tag '/frontend/js/validation.js' %>
+
+    <!-- Tweetie JS  -->
+    <%= javascript_include_tag '/frontend/js/tweetie.min.js' %>
+
+    <!-- Google Map PopUp -->
+    <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js' %>
+    <%= javascript_include_tag '/frontend/js/map-popup.js' %>
+
+    <!-- Css Preseter -->
+    <%= javascript_include_tag '/frontend/js/preset.js' %>
+
+    <!-- Custom script -->
+    <%= javascript_include_tag '/frontend/js/custom.js' %>
+
+</body>
+
+</html>
