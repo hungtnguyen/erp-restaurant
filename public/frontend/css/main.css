@@ -128,12 +128,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 h1{
     color           : #c69e59;
-    font-family     : 'Playball',sans-serif;
+    font-family     : 'Roboto',sans-serif;
     font-size       : 50px;
     text-transform  : capitalize;
   }
 h2{
-    font-family     : 'Playball',sans-serif;
+    font-family     : 'Roboto',sans-serif;
     font-size       : 40px;
     text-transform  : capitalize;
     color           : #a87f41;
@@ -219,10 +219,10 @@ textarea{
     -o-transition: all ease 1s;
     transition: all ease 1s;
     background:rgba(0,0,0,0.3);
-    background: -webkit-linear-gradient(bottom, rgba(18,18,18,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top, rgba(18,18,18,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top, rgba(18,18,18,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to top, rgba(18,18,18,0), rgba(0,0,0,1)); /* Standard syntax */
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(0,0,0,.075), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,.075), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(0,0,0,.075), rgba(0,0,0,1)); /* Standard syntax */
   }
 .navbar-fixed-top{
   position: fixed !important;

@@ -1,0 +1,44 @@
+<!--===| Menu Page Top Banner Start |===-->
+<section class="banner-wrapper menu-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>thực đơn</h1>
+                <p>thực phẩm tươi sạch, tốt cho sức khỏe</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===| Menu Page Top Banner End |===-->
+
+<!--===| Menu Page First Block Start |===-->
+<% (1..5).each_with_index do |menu,index| %>
+<section class="menu-block <%= index.odd? ? 'odd' : 'oven' %>-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="top-icon">
+                    <img src="/frontend/img/apitaiger.jpg" alt="Appetizer">
+                    <h1 class="text-center">Thực đơn chính</h1>
+                </div>
+            </div>
+            <% (1..10).each do |fm| %>
+                <div class="col-xs-12 col-md-6">
+                    <div class="media menu-media">
+                        <div class="media-left media-top">
+                            <a href="#">
+                              <img src="/frontend/img/food_menu.png" alt="Story 02">
+                            </a>
+                        </div><!-- media left-->
+                        <div class="media-body">
+                            <h2>Nấm nướng giấy bạc <span>120.000</span></h2>
+                            <p>Grilled Mushroom with totu</p>
+                        </div><!--/.media body-->
+                    </div>
+                </div><!-- /.col-md-6 -->
+            <% end %>
+        </div>
+    </div>
+</section>
+<% end %>
+<!--===| Menu Page First Block End |===-->

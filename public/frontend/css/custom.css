@@ -1,0 +1,98 @@
+.welcome-note.text-center {
+    padding: 50px 55px 50px 55px;
+}
+.about-banner {
+    background-image: url(../img/menu-banner-1.png);
+}
+.reservation-banner, .events-banner, .menu-banner {
+    background-image: url(../img/menu-banner-1.png);
+}
+.book-table-wrapper {
+    background-image: url(../img/book-table.jpg);
+}
+.story-wrapper .contents {
+    padding: 30px 0 40px 0;
+}
+.section-padding {
+    padding: 70px 0;
+}
+.banner-wrapper {
+    padding: 180px 0 30px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.footer-top {
+    padding: 50px 0;
+}
+.banner-wrapper p {
+    color: #ff1c00;
+    font-weight: 500;
+}
+.event-contents-wrapper {
+    padding: 70px 0;
+}
+.event-heading h1 {
+    padding-top: 30px;
+    line-height: 30px;
+    text-transform: none;
+    padding: 15px 0;
+}
+.events-contents-wrap-one, .events-contents-wrap-two {
+    padding-bottom: 70px;
+}
+.event-heading .btn.btn-imfo.btn-read-more {
+    margin-top: 20px;
+}
+.date-image .date-icon {
+    background-color: unset;
+}
+.menu-block.odd-section {
+    padding: 50px 0 100px;
+    background-size: cover;
+}
+.menu-block.oven-section {
+    background: url(../img/second-back.jpg)center center no-repeat;
+    padding: 50px 0 50px;
+    background-size: cover;
+}
+.galleri-wrapper.fix-list figure.effect-cheff figcaption::before,
+.galleri-wrapper.fix-list figure.effect-cheff .fa {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.galleri-wrapper.fix-list figure.effect-cheff h2 {
+  margin-top: 6%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  background-color: transparent;
+}
+.galleri-wrapper.fix-list figure.effect-cheff figcaption::before,
+.galleri-wrapper.fix-list figure.effect-cheff p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.galleri-wrapper.fix-list figure.effect-cheff figcaption {
+    background-color: rgba(58,52,42,0);
+}
+.galleri-wrapper.fix-list .grid figure p {
+    font-size: 100%;
+}
+.testimonial-wrapper .carousel-inner .item p::before {
+    color: #000000;
+}
+.testimonial-wrapper .carousel-inner .item p, .testimonial-wrapper .carousel-inner .item blockquote {
+    color: #000000;
+}
+.testimonial-wrapper .carousel-inner .item img {
+    border: 4px solid #a87f41;
+}
+.testimonial-wrapper {
+    background: none;
+}
+.testimonial-wrapper::before {
+    background: #fff;
+}

@@ -1,0 +1,88 @@
+<!--===| Contact Banner Start|===-->
+<section class="banner-wrapper contact-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>liên hệ</h1>
+                <p>thông tin liên hệ và góp ý</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===| Contact Banner End|===-->
+<!--===| Contact Body Start|===-->
+<section class="section-padding contact-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-wrapper">
+                    <h2>hãy để lại lời nhắn</h2>
+                    <p class="text-justify">Mọi thông tin liên hệ giải đáp thắc mắc hoặc đóng góp ý kiến bạn vui lòng điền form dưới đây.
+                    Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.</p>
+                    <form id='contact_form' name="enqueryForm" method="post" action="php/email.php">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <input type="text" class="form-control" name="name" placeholder="họ và tên">
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <input id="email" type="email" class="form-control" name="email" placeholder="địa chỉ e-mail">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <input type="text" class="form-control" name="phone" placeholder="số điện thoại">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <input type="text" class="form-control" name="subject" placeholder="nhập chủ đề liên hệ">
+                            </div>
+                            <div class="col-xs-12 col-sm-12">
+                                <textarea id="message" class="form-control" rows="4" name="message" placeholder="nội dung lời nhắn hoặc góp ý"></textarea>
+                            </div>
+                            <div class="form-group col-xs-12">
+                                <div id="mail_success" class="success" style="display:none;">Tin nhắn của bạndđã được gửi đi thành công. </div>
+                                <div id="mail_fail" class="error" style="display:none;"> Rất tiếc, tin nhắn của bạn chưa được gửi đi. Vui lòng kiểm tra và thử lại. </div>
+                            </div>
+                            <button id="send_message" class="btn" name="submit" type="submit">gửi tin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div id="map-canvas1"></div>
+            </div>
+        </div>
+        <div class="address-wrapper">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="left">
+                        <h3>địa chỉ</h3>
+                        <p>268 Lý Thường Kiệt, Phường 14,<br>
+                          Quận 10, Hồ Chí Minh, Việt Nam</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="middle">
+                        <h3>đặt bàn</h3>
+                        <p>
+                            <a href="tel:+84 123 456 789">+84 96 323 8714</a><br>
+                            <a href="mailto:1633514@hcmut.edu.vn">1633514@hcmut.edu.vn</a>
+                        </p>  
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="right">
+                        <h3>phản ánh</h3>
+                        <p>
+                            From Airport 3 Minutes Taxi Distance
+                            From Bus Stop 10 Minutes Walking Distance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===| Contact Body End|===-->

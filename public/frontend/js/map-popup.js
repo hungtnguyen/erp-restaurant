@@ -2,7 +2,7 @@ var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
 directionsDisplay = new google.maps.DirectionsRenderer();
-var myLatlng = new google.maps.LatLng(40.7376487, -73.9886182);
+var myLatlng = new google.maps.LatLng(10.773319, 106.659468);
 
 function initialize() {
 
@@ -38,7 +38,7 @@ function initialize() {
   // Create a map object, and include the MapTypeId to add
   // to the map type control.
   var mapOptions = {
-    zoom: 12,
+    zoom: 15,
     center: myLatlng,
     scrollwheel: true,
     mapTypeControlOptions: {
@@ -48,8 +48,14 @@ function initialize() {
 
   
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  // Place a draggable marker on the map
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      draggable:true,
+      title:"Đồ án môn học 3 - được thực hiện bởi NGUYỄN TÔN HÙNG (1633514)"
+  });
   directionsDisplay.setMap(map);
-
 
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('map_style', styledMap);

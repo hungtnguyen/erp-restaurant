@@ -1,0 +1,126 @@
+<!--===| Reservation Banner Start|===-->
+<div class="banner-wrapper reservation-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Đặt bàn</h1>
+                <p>Sự lựa chọn tốt nhất cho chính quý vị</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--===| Reservation Banner end|===-->
+  
+<!--==| Reservation Top Section Start |==-->
+<section class="section-padding reservation-top-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <div id="reservation-slider" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#reservation-slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#reservation-slider" data-slide-to="1"></li>
+                        <li data-target="#reservation-slider" data-slide-to="2"></li>
+                    </ol>
+          
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="/frontend/img/slider3.jpg" alt="Đặt bàn">
+                        </div>
+                        <div class="item">
+                            <img src="/frontend/img/slider3.jpg" alt="Đặt bàn">
+                        </div>
+                        <div class="item">
+                            <img src="/frontend/img/slider3.jpg" alt="Đặt bàn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <h2 class="text-left">Đặt bàn trước</h2>
+            <p class="slogan">Một cách để đảm bảo có chỗ ngồi ưng ý</p>
+            <p>Chúng tôi khuyên bạn nên đặt chỗ trước. Vui lòng sử dụng hệ thống đặt chỗ trực tuyến của chúng tôi. Nếu có sẵn chỗ ngồi, chúng tôi sẽ rất sẵn lòng chào đón bạn trong cùng một ngày. Vì vậy, xin vui lòng, đừng ngần ngại liên hệ với chúng tôi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==| Reservation Top Section End |==-->
+
+<!--==| Book A table Start |==-->
+<section class="book-table-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="booking-back">
+                    <div class="booking-form reservation-page">
+                        <h2>yêu cầu đặt bàn</h2>
+                        <p class="slogan">Thời gian đặt bàn ít nhất trước 30 phút </p>
+                        <form id="booking_form" name="bookingForm" method="post" action="php/reservation-main.php">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" type="text" name="name" placeholder="họ và tên">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" type="tel" name="phone" placeholder="số điện thoại">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input id="email-reservation" class="form-control" type="email" name="mail" placeholder="địa chỉ e-mail">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" type="text" name="person-no" placeholder="số người">
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input id="datepicker" class="form-control" type="text" name="date" placeholder="ngày" >
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" type="text" name="time" placeholder="giờ (từ 8h-22h)">
+                                </div>
+                                <div class="col-xs-12 col-sm-12">
+                                    <textarea class="form-control" rows="3" name="message" placeholder="Nội dung và yêu cầu khác"></textarea>
+                                </div>
+                                <div class="form-group col-xs-12 reply">
+                                    <div id="reservation_mail_success" class="success" style="display:none;">Your message has been sent successfully. </div>
+                                    <div id="reservation_mail_fail" class="error" style="display:none;"> Sorry, error occured this time sending your message. </div>
+                                </div>
+                                <button id="send-message-reservation" type="submit" class="btn">Xác nhận</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="wow slideInRight col-xs-12 col-sm-6">
+                <div class="booking-image">
+                    <img src="/frontend/img/booking-chef.png" alt="Chef">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==| Book A table End |==-->
+
+<!--==| Reservation Bottom Section Start |==-->
+<section class="section-padding reservation-bottom-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2>đặt chỗ qua điện thoại</h2>
+                <p>
+                    Chúng tôi nhận đặt chỗ cho bữa trưa và bữa tối. Để đặt chỗ, vui lòng gọi cho chúng tôi theo số 
+                    <a href="tel:+841234567890">+84 123 456 7890</a> khi bạn không có thời gian đặt trực tuyến.
+                    Chỉ cần gọi điện cho chúng tôi và một trong những đại diện của quầy lễ tân của chúng tôi sẽ sớm đặt vé cho bạn.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h2 class="heading">đặt chỗ tổ chức sự kiện</h2>
+                <p>
+                    Bạn có muốn đặt toàn bộ vị trí cho sự kiện đặc biệt không?<br>
+                    Chỉ cần gửi cho chúng tôi một E-mail tại <a href="mailto:1633514@hcmut.edu.vn">1633514@hcmut.edu.vn</a>
+                    với tất cả các chi tiết và chúng tôi sẽ báo giá. Chỉ cần gọi điện cho chúng tôi và đại diện quầy lễ tân của chúng tôi sẽ hỗ trợ cho bạn.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==| Reservation Bottom Section End |==-->

@@ -7,9 +7,9 @@ require "erp/restaurant/version"
 Gem::Specification.new do |s|
   s.name        = "erp_restaurant"
   s.version     = Erp::Restaurant::VERSION
-  s.authors     = ["Hung Nguyen"]
+  s.authors     = ["Nguyen Ton Hung"]
   s.email       = ["1633514@hcmut.edu.vn"]
-  s.homepage    = "http://hoangkhang.com.vn"
+  s.homepage    = "http://hcmut.edu.vn/"
   s.summary     = "Restaurant of project 3"
   s.description = "Restaurant of project 3"
   s.license     = "MIT"

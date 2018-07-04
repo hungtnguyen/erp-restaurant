@@ -18,6 +18,7 @@
     <%= stylesheet_link_tag '/frontend/css/main.css', media: 'screen' %>
     <!-- Responsive -->
     <%= stylesheet_link_tag '/frontend/css/responsive.css', media: 'screen' %>
+    <%= stylesheet_link_tag '/frontend/css/custom.css', media: 'screen' %>
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/ie.js"></script>
@@ -109,8 +110,13 @@
     <%= javascript_include_tag '/frontend/js/tweetie.min.js' %>
 
     <!-- Google Map PopUp -->
-    <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js' %>
+    <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAmtFdQpp5mmFgyG9-M7vR2rbAa73NHfog&callback=initMap' %>
     <%= javascript_include_tag '/frontend/js/map-popup.js' %>
+    
+    <% if params[:controller] == "erp/restaurant/frontend/information" && params[:action] == "contact_us" %>
+        <!-- Google Map Contact -->
+        <script type="text/javascript" src="/frontend/js/map-contact.js"></script>
+    <% end %>
 
     <!-- Css Preseter -->
     <%= javascript_include_tag '/frontend/js/preset.js' %>
