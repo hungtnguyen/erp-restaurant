@@ -15,23 +15,25 @@
 <section class="event-contents-wrapper">
 	<div class="container">
 		<div class="row">
-            <% (1..4).each do |blog| %>
+            <% @blogs.each do |blog| %>
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="events-contents-wrap-one">
                         <div class="event-content">
-                            <img src="/frontend/img/event.jpg" alt="Event 01">
+                            <%= link_to image_tag(article_image(blog.image.large, 'large'), alt: blog.name), article_link(blog) %>
                             <div class="date-image">
                                 <div class="date-text">
-                                    <p>T7/2018</p>
-                                    <span>06</span>
+                                    <p><%= blog.created_at.strftime('T%m/%Y') %></p>
+                                    <span><%= blog.created_at.strftime('%d') %></span>
                                 </div>
                                 <div class="date-icon"></div>
                             </div>
                         </div>
                         <div class="event-heading">
-                            <h1><a href="<%= erp_restaurant.blog_detail_path %>">Chương trình tri ân khách hàng 2018 và chào đón năm mới</a></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec eleifend lacus, ut convallis dui. Etiam ac ullamcorper dolor. Sed aliquam dolor eget diam efficitur, quis ullamcorper diam ornare. Etiam congue pretium eros et cursus. </p>
-                            <a class="btn btn-imfo btn-read-more" href="<%= erp_restaurant.blog_detail_path %>" >Chi tiết</a>
+                            <h1>
+                                <%= link_to blog.name, article_link(blog) %>
+                            </h1>
+                            <p><%= short_text(blog.content, 80) %>...</p>
+                            <%= link_to 'Chi tiết', article_link(blog), class: 'btn btn-imfo btn-read-more' %>
                         </div>
                     </div>
                 </div>
